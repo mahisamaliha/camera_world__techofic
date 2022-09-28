@@ -60,7 +60,7 @@
 .product-card {
     &__content {
         &--title {
-            font-family: "Inter Extra Light BETA";
+            // font-family: "Inter Extra Light BETA";
             font-size: 14px;
             &:not(:last-child) {
                 margin-bottom: 0.6em;
@@ -69,7 +69,7 @@
 
         &--subtitle {
             color: #0C0C0C;
-            font-family: 'Inter Extra Light BETA';
+            // font-family: 'Inter Extra Light BETA';
             margin-bottom: 0.5em;
             font-size: 14px;
         }
@@ -80,7 +80,7 @@
             font-size: 16px;
 
             del {
-                font-family: 'Inter Extra Light BETA';
+                // font-family: 'Inter Extra Light BETA';
                 opacity: 0.2;
             }
         }

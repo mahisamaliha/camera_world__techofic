@@ -1,4 +1,4 @@
-@import url(../font/style.css);
+@import url(../font/font.css);
 .bg-gray {
   background-color: #f8f8f8;
 }
@@ -92,12 +92,11 @@
 }
 .time-card h3 {
   font-size: 1.5em;
-  font-family: "Inter Extra Light BETA";
   margin-bottom: 0.5em;
 }
 .time-card h4 {
   font-size: 2.5em;
-  font-family: "Inter Extra Bold";
+  font-weight: 900;
   margin-bottom: 0.6em;
 }
 .time-card__counter {
@@ -115,7 +114,6 @@
   font-size: 1em;
 }
 .time-card__counter li span {
-  font-family: "Inter Extra Bold";
   font-size: 1.3em;
 }
 .time-card__link {
@@ -241,7 +239,6 @@
 }
 
 .product-card__content--title {
-  font-family: "Inter Extra Light BETA";
   font-size: 14px;
 }
 .product-card__content--title:not(:last-child) {
@@ -249,7 +246,6 @@
 }
 .product-card__content--subtitle {
   color: #0C0C0C;
-  font-family: "Inter Extra Light BETA";
   margin-bottom: 0.5em;
   font-size: 14px;
 }
@@ -259,7 +255,6 @@
   font-size: 16px;
 }
 .product-card__content--price del {
-  font-family: "Inter Extra Light BETA";
   opacity: 0.2;
 }
 
@@ -425,7 +420,6 @@ a {
 /*****************************
     Add All Typography Here
 *****************************/
-/******** Font Face ********/
 /******** Styling ********/
 html {
   font-size: 1rem;
@@ -433,10 +427,11 @@ html {
 
 body {
   font-size: 1em;
+  font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inter Bold";
+  font-weight: 700;
 }
 
 /*************** Home CSS ***************/
