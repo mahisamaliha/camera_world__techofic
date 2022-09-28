@@ -3,11 +3,11 @@
   background-color: #f8f8f8;
 }
 
-.t-clr-primary {
+.t-clr__primary {
   color: #0C0C0C !important;
 }
 
-.t-clr-secondary {
+.t-clr__secondary {
   color: #FF0000 !important;
 }
 
@@ -34,6 +34,38 @@
 .ptb-100 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.f-weight__100 {
+  font-weight: 100 !important;
+}
+
+.f-weight__200 {
+  font-weight: 200 !important;
+}
+
+.f-weight__300 {
+  font-weight: 300 !important;
+}
+
+.f-weight__400 {
+  font-weight: 400 !important;
+}
+
+.f-weight__500 {
+  font-weight: 500 !important;
+}
+
+.f-weight__600 {
+  font-weight: 600 !important;
+}
+
+.f-weight__700 {
+  font-weight: 700 !important;
+}
+
+.f-weight__800 {
+  font-weight: 800 !important;
 }
 
 .main-btn {
@@ -162,9 +194,12 @@
   border: 1px solid #E3E3E3;
   border-radius: 8px;
   background-color: transparent;
-  padding: 60px 32px;
+  padding: 60px 25px;
   text-align: center;
   margin-bottom: 1em;
+}
+.product-card__single .product-card__box {
+  padding: 40px 25px;
 }
 
 .product-card__box figure {
@@ -206,10 +241,11 @@
 }
 
 .product-card__content--title {
-  color: #FF0000;
   font-family: "Inter Extra Light BETA";
-  margin-bottom: 0.6em;
   font-size: 14px;
+}
+.product-card__content--title:not(:last-child) {
+  margin-bottom: 0.6em;
 }
 .product-card__content--subtitle {
   color: #0C0C0C;
@@ -445,23 +481,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-.featured-category__grid-container {
-  display: grid;
-}
-.featured-category__grid-container-item:not(:last-child) {
-  margin-right: 40px;
+.featured-category__grid--item {
+  flex: 0 0 auto;
+  width: 20%;
 }
 
-@media (max-width: 991px) {
-  .featured-category__grid-container {
-    grid-template-columns: auto auto auto auto;
-  }
-}
-@media (min-width: 992px) {
-  .featured-category__grid-container {
-    grid-template-columns: auto auto auto auto auto;
-  }
-}
 .owl-carousel .new-product__carousel {
   display: none;
 }
@@ -1010,7 +1034,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000000;
+  color: #0C0C0C;
 }
 
 a {

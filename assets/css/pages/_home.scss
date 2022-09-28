@@ -61,26 +61,34 @@
 
 // Featured Category
     
-.featured-category__grid-container{
-    display: grid;
-    &-item:not(:last-child) {
-        margin-right: 40px;
+// .featured-category__grid-container{
+//     display: grid;
+//     &-item:not(:last-child) {
+//         margin-right: 40px;
+//     }
+// }
+.featured-category {
+    &__grid {
+        &--item {
+            flex: 0 0 auto;
+            width: 20%;
+        }
     }
 }
-@include breakpoint-max(991px) {
-    .featured-category__grid-container{
-        // grid-template-columns:last-child{
-        //     display: none;
-        // }
-        grid-template-columns: auto auto auto auto;
+// @include breakpoint-max(991px) {
+//     .featured-category__grid-container{
+//         // grid-template-columns:last-child{
+//         //     display: none;
+//         // }
+//         grid-template-columns: auto auto auto auto;
 
-    }
-}
-@include breakpoint-min(992px) {
-    .featured-category__grid-container{
-        grid-template-columns: auto auto auto auto auto;
-    }
-}
+//     }
+// }
+// @include breakpoint-min(992px) {
+//     .featured-category__grid-container{
+//         grid-template-columns: auto auto auto auto auto;
+//     }
+// }
 
 // New Product
 .owl-carousel .new-product__carousel {

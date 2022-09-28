@@ -51,7 +51,9 @@ jQuery(function ($) {
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
         let idAttribute = $(this).attr("data-id");
-        $(".new-product__area").find(".new-product__carousel" + "[data-carousel='" + idAttribute + "']").addClass("active").siblings().removeClass("active");
+        console.log(idAttribute);
+        $(".new-product__area").find(`[data-carousel='${idAttribute}']`).addClass("active").siblings().removeClass("active");
+        // $(".new-product__area").find(".new-product__carousel" + "[data-carousel='" + idAttribute + "']").addClass("active").siblings().removeClass("active");
     });
 
 });
