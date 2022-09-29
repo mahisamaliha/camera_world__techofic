@@ -436,26 +436,23 @@
 
 
 //----------------New Product----------------\\
-.owl-carousel .new-product__carousel {
-    display: none;
+// .owl-carousel .new-product__carousel {
+//     display: none;
 
-    &.active {
-        display: block;
-    }
-}
-.active {
-    color: $secondaryColor  !important;
-}
-.new-product__section{
-    .section-header__action--tab {
-        li {
-            font-size: 14px;
-            display: inline-block;
-            cursor: pointer;
-        }
-    
-        li:not(:last-child) {
-            margin-right: 15px;
+//     &.active {
+//         display: block;
+//     }
+// }
+// .active {
+//     color: $secondaryColor  !important;
+// }
+.new-product {
+    &__carousel {
+        &.owl-carousel {
+            display: none;
+            &.active {
+                display: block;
+            }
         }
     }
 }
