@@ -953,14 +953,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .trending_offers--section {
   display: flex;
+  align-items: center;
   border: 1px solid #E3E3E3;
   border-radius: 8px;
   background-color: #ffffff;
   padding: 54px 48px;
 }
 .trending_offers--section--left {
-  padding-top: 90px;
-  padding-bottom: 90px;
   max-width: 250px;
 }
 .trending_offers--section--left h3 {
@@ -989,10 +988,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 .trending_offers--section--right .trending__img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 430px;
-  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .owl-carousel.featured-product__carousel {
@@ -1183,6 +1180,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
+  }
+  .hot-deals__carousel .owl-nav [class*=owl] {
+    position: unset;
+    left: auto;
+    top: auto;
   }
   .hot-deals__carousel--area {
     padding-left: 75px;
